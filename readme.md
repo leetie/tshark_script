@@ -6,4 +6,5 @@ SETUP
   `gem install nokogiri`
   `gem install colorize`
  * if `tshark --version` returns nothing, refer to [the tshark installation page](https://tshark.dev/setup/install/) to install it
+ 
 the script then enumerates through the ip's captured from 10 packets and if one does not begin with 192, or is not equal to your local ip, sets it to a variable. uses the [nokogiri](https://nokogiri.org/) gem to parse a url with the target ip appended to it, and prints info to STDOUT
